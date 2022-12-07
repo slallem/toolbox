@@ -45,12 +45,12 @@ jobs:
           docker tag $ECR_REPOSITORY:$IMAGE_TAG $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
-  #deploy:
-  #  runs-on: ubuntu-latest
-  #  steps:
-  #    - name: Deployment to EKS
-  #      env:
-  #        DOCKER_IMAGE_URL: $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+#deploy:
+#  runs-on: ubuntu-latest
+#  steps:
+#    - name: Deployment to EKS
+#      env:
+#        DOCKER_IMAGE_URL: $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
 #  deploy:
 #    - name: Deploy to Amazon ECS (Amazon Elastic Container Service)
