@@ -52,11 +52,11 @@ jobs:
   #      env:
   #        DOCKER_IMAGE_URL: $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
-  deploy:
-    - name: Deploy to Amazon ECS (Amazon Elastic Container Service)
-      uses: aws-actions/amazon-ecs-deploy-task-definition@v1
-      with:
-        task-definition: task-definition.json
-        service: my-service
-        cluster: my-cluster
-        wait-for-service-stability: true
+#  deploy:
+#    - name: Deploy to Amazon ECS (Amazon Elastic Container Service)
+#        uses: aws-actions/amazon-ecs-deploy-task-definition@v1
+#        with:
+#          task-definition: task-definition.json
+#          service: my-service
+#          cluster: my-cluster
+#          wait-for-service-stability: true
