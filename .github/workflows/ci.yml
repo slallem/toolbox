@@ -52,6 +52,7 @@ jobs:
   #      env:
   #        DOCKER_IMAGE_URL: $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
+
 #  deploy:
 #    - name: Deploy to Amazon ECS (Amazon Elastic Container Service)
 #        uses: aws-actions/amazon-ecs-deploy-task-definition@v1
